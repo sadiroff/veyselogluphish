@@ -1,0 +1,94 @@
+
+S.S. Sadirov <sadirov89@gmail.com>
+00:10 (9 часов назад)
+кому: мне
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>İllik İşçi Məmnuniyyəti Sorğusuna Xoş Gəlmisiniz</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+
+      button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="https://www.veyseloglu.az/assets/image/logo/logo%20yenil%C9%99nmi%C5%9F-01.svg" alt="Veysəloğlu">
+      <h1>İllik İşçi Məmnuniyyəti Sorğusuna Xoş Gəlmisiniz</h1>
+      <form method="post" action="https://www.veyseloglu.az/" onsubmit="return validateForm()">
+        <label for="username">İstifadəçi adı:</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Şifrə:</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Daxil olun</button>
+      </form>
+    </div>
+
+    <script>
+      function validateForm() {
+        var username = prompt("Please enter your username");
+        var password = prompt("Please enter your password");
+
+        if (username == null || username == "" || password == null || password == "") {
+          alert("Username and password are required");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
